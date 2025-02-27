@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio to Text Converter with Translation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Audio to Text Converter</h1>
+        
+        <!-- Language Selection -->
+        <label for="language">Choose Output Language:</label>
+        <select id="language">
+            <option value="en">English</option>
+            <option value="hi">Hindi</option>
+            <option value="mr">Marathi</option>
+        </select>
+
+        <button id="start-btn">Start Recording</button>
+        <button id="stop-btn" disabled>Stop Recording</button>
+        <p id="status-text">Welcome! Select language and press "Start Recording".</p>
+        
+        <div id="output-container">
+            <p id="output-text">Your transcribed text will appear here...</p>
+            <div id="actions" class="hidden">
+                <button id="save-btn">Save</button>
+                <button id="delete-btn">Delete</button>
+                <button id="copy-btn">Copy Text</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
